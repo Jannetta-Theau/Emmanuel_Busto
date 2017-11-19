@@ -1,0 +1,497 @@
+@font-face {
+  font-family: "Didot";
+  src: url("../fonts/Didot.ttc") format("ttc");
+}
+@font-face {
+  font-family: 'Bodoni';
+  src: url('../fonts/Bodoni_Book.woff') format("woff");
+}
+@font-face {
+    font-family: 'bodoni-bookbookitalic';
+    src: url('../fonts/Bodoni_72_bkita.ttf')
+}
+::selection {
+    background: #B78916;
+    color: white;
+}
+a{
+  text-decoration: none;
+}
+.logo{
+  z-index: 10000;
+  display: none;
+  width: 80px;
+  height: auto;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+
+}
+.logoImg{
+  width: 100%;
+    animation: logoFade 1.5s;
+}
+.menu{
+  filter: blur(0px);
+  padding: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: fixed;
+}
+.menuLi{
+  list-style: none;
+  display: inline;
+}
+.menuLink{
+  margin: 14px 16px;
+  display: inline-block;
+  font-family: 'DIDOT', serif;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.menuLink:hover{
+  cursor: pointer;
+  color: #B78916;
+}
+.backgroundHome{
+  position: relative;
+  background: url("../img/Imgfond.jpg") no-repeat center fixed;
+  height: 100vh;
+  -webkit-background-size: cover;
+}
+.containerNameBrand{
+  width: 27%;
+  height: auto;
+  position: fixed;
+  bottom: 189px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+
+.emmanuelBrand{
+  color: #FFF;
+  font-family: 'Bodoni';
+  font-size: 1.5vmax;
+  text-align: left;
+  margin-bottom: -5px;
+  margin-left: 1.5%;
+
+}
+.titleBrand{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Bodoni';
+  font-size:9vmax;
+  text-rendering: optimizeSpeed;
+
+}
+.franceBrand{
+  color: #FFF;
+  width: 100%;
+  position: fixed;
+  font-size: 1.5vmax;
+  font-family: 'Bodoni';
+  text-align: center;
+  bottom: 25px;
+
+}
+.about{
+  background-color: #FFF;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  padding-bottom: 100px;
+}
+.titleSection{
+  padding-top: 100px;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'bodoni-bookbookitalic';
+}
+.bustoPhoto{
+  width: 150px;
+  display: block;
+  margin: 46px auto 0 auto;
+  border-radius: 50%;
+}
+.containerText-1{
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Bodoni';
+  width: 30%;
+  margin: 46px auto 0 auto;
+  word-spacing: 5px;
+}
+.textPara{
+  line-height: 28px;
+  margin-top: 46px;
+}
+.textPara::selection{
+  color: white;
+}
+.gold{
+  color: #B78916;
+}
+.backgroundImg{
+  position: relative;
+  z-index: 1;
+  height: auto;
+  -webkit-background-size: cover;
+  background-position: center center;
+  background: url("../img/Bg-2-1.jpg") no-repeat fixed;
+}
+.citation{
+  font-family: 'bodoni-bookbookitalic';
+  text-align: left;
+  font-size: 35px;
+  position: relative;
+  z-index: 2;
+  color: #FFF;
+  line-height: 40px;
+}
+
+.citationRight{
+    margin-left: 50%;
+    padding: 0 80px;
+    padding-top: 80px;
+    padding-bottom: 300px;
+}
+
+.models{
+  background-color: #FFF;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: auto;
+}
+
+.models-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.container{
+  padding: 0 10%;
+}
+
+.bikeName{
+  text-align: center;
+  font-family: 'bodoni-bookbookitalic';
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.imgContainer{
+  width: 400px;
+}
+.bikeImg{
+  width: 100%;
+  filter: grayscale(100%);
+}
+.bikeImg:hover{
+  filter: grayscale(0%);
+  transition-duration: .2s;
+  transition-timing-function: ease-in;
+}
+.bikeList ul li{
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'bodoni-bookbookitalic';
+}
+.littleText{
+  font-size: 15px;
+}
+.price{
+  color: #B78916;
+  padding-top: 20px;
+}
+.button{
+  display: block;
+  color: black;
+  cursor: pointer;
+  background-color: #FFF;
+  border: 1px solid #B78916;
+  width: 100px;
+  margin: 30px auto;
+  padding: 10px 20px 10px 20px;
+  font-family: 'bodoni-bookbookitalic';
+  font-size: 15px;
+}
+.button:hover{
+  background-color: #B78916;
+  opacity: 0.7;
+  color: #FFF;
+}
+.comments{
+  padding: 0 10%;
+}
+.containerComments{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 150px;
+}
+.commentBox{
+  text-align: center;
+  font-family: 'bodoni-bookbookitalic';
+  font-size: 22px;
+  display: inline-block;
+  width: 50%;
+  line-height: 34px;
+
+}
+
+.commentText{
+    position: relative;
+    top: 50%;
+    padding: 0 50px;
+    height: 100px;
+    z-index: 2;
+}
+
+.commentName{
+    position: relative;
+    top: 55%;
+    padding: 0 40px;
+    display: block;
+    font-size: 12px;
+    padding-top: 25px;
+    z-index: 2;
+}
+
+.boxBackground{
+    position: relative;
+    height: 320px;
+    width: 280px;
+    border: solid 2px #B78916;
+    margin: auto;
+}
+
+.boxBackground2{
+    position: relative;
+    height: 320px;
+    width: 280px;
+    border: solid 2px #000;
+    margin: auto;
+}
+
+.backgroundImg-2{
+  position: relative;
+  z-index: 1;
+  height: auto;
+  background-position: center;
+  background: url("../img/Bg-3.jpg") no-repeat fixed;
+  background-size: cover;
+}
+.citationLeft{
+  margin-right: 50%;
+  padding: 0 80px;
+  padding-top: 80px;
+  padding-bottom: 300px;
+}
+.contact{
+  background-color: #FFF;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.contactPadding{
+    margin: auto;
+    padding: 0 30px;
+    min-width: 480px;
+}
+
+.containerDiago{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  margin: 90px auto 0 auto;
+}
+.iconContainer{
+  width: 50px;
+  margin: 0 auto 0 auto;
+}
+.icon{
+  width: 100%;
+}
+.containerText-2{
+  margin: 0;
+  width: 100%;
+  font-size: 20px;
+}
+.contactText{
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Bodoni";
+}
+.black{
+  color: #000;
+}
+.diago{
+  margin: auto;
+  width: 1px;
+  height: 50%;
+  border: none;
+  background-color: #000;
+}
+.retourHaut{
+  position: relative;
+  z-index: 55;
+  margin-top: -100px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "bodoni-bookbookitalic";
+  text-decoration: undeline;
+  color: #000;
+}
+.retourHaut:hover{
+  text-decoration: underline;
+
+}
+.footer{
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  height: 200px;
+  background-color: #000;
+}
+.socialLogo{
+  width: 30%;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.containerSocialIcon{
+  position: relative;
+  width: 50px;
+}
+.socialIcon{
+  width: 100%;
+}
+.menuFooter{
+  text-align: center;
+    padding-bottom: 30px;
+}
+.menuLiFooter{
+  list-style: none;
+  display: inline;
+}
+.menuLinkFooter{
+  margin: 14px 16px;
+  display: inline-block;
+  font-family: "bodoni-bookbookitalic";
+  color: #FFF;
+  text-decoration: underline;
+  font-size: 13px;
+}
+.menuLinkFooter:hover{
+  cursor: pointer;
+  color: #B78916;
+}
+.copyright{
+  width: 100%;
+  text-align: center;
+  font-family: "bodoni";
+  font-size: 15px;
+  color: #FFF;
+  display: inline-block;
+}
+
+@keyframes logoFade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@media (max-width: 1060px){
+    .citationRight{
+        margin-left: 0;
+        padding: 0 30px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .citationLeft{
+        margin-right: 0;
+        padding: 0 30px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .containerText-1 {
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'Bodoni';
+        width: 90%;
+        margin: 46px auto 0 auto;
+        word-spacing: 5px;
+    }
+
+    .containerNameBrand {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        padding: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    .emmanuelBrand {
+        color: #FFF;
+        font-family: 'Bodoni';
+        font-size: 1.5vmax;
+        margin-bottom: -5px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .commentBox {
+        text-align: center;
+        font-family: 'bodoni-bookbookitalic';
+        font-size: 28px;
+        display: inline-block;
+        width: 100%;
+        line-height: 34px;
+    }
+
+    .commentName {
+        position: relative;
+        top: 300px;
+        padding: 0 40px;
+        display: block;
+        font-size: 18px;
+        padding-top: 25px;
+    }
+
+    .diago{
+        display: none;
+    }
+}
